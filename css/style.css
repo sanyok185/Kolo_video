@@ -178,6 +178,10 @@ body {
 .header {
   background: linear-gradient(315deg,rgba(0,0,0,0) 0,#000 100%),url(../img/hero.webp) top/cover no-repeat
 }
+.header__container {
+  display: grid;
+  justify-items: start
+}
 .header__logo {
   transition: all .6s ease-out .1s;
   opacity: 0;
