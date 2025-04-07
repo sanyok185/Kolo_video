@@ -565,7 +565,17 @@ body {
   align-items: flex-end
 }
 .item-equipment__image img {
-  transition: all .3s
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: contain;
+  object-fit: contain;
+  transition: all .3s;
+  justify-self: flex-end;
+  -o-object-position: bottom;
+  object-position: bottom
 }
 .item-equipment__body {
   display: grid;
@@ -966,6 +976,12 @@ body {
     padding: 2.1875rem
   }
   .attention__icon {
+    width: 5.875rem
+  }
+  .attention__icon {
+    height: 5.875rem
+  }
+  .attention__icon {
     margin-bottom: 2.625rem
   }
   .attention__icon img {
@@ -1144,7 +1160,7 @@ body {
     object-position: 10% top
   }
   .service__items {
-    grid-template-columns: repeat(1,1fr)
+    grid-template-columns: 1fr
   }
   .item-service:nth-child(2),
   .item-service:nth-child(4) {
@@ -1246,6 +1262,9 @@ body {
     flex-direction: column;
     justify-items: center;
     text-align: center
+  }
+  .attention {
+    grid-template-columns: 3.75rem auto
   }
   .attention__message {
     margin-bottom: .8125rem
@@ -1358,10 +1377,16 @@ body {
     padding: 1rem
   }
   .attention__icon {
+    width: 3.75rem
+  }
+  .attention__icon {
+    height: 3.75rem
+  }
+  .attention__icon {
     margin-bottom: .9375rem
   }
   .attention__icon img {
-    width: 2.1875rem
+    width: 1.875rem
   }
   .equipment {
     padding-bottom: 5rem
@@ -1545,10 +1570,16 @@ body {
     padding: clamp(1rem ,.6469594595rem + 1.2837837838vw ,2.1875rem)
   }
   .attention__icon {
+    width: clamp(3.75rem ,3.1182432432rem + 2.2972972973vw ,5.875rem)
+  }
+  .attention__icon {
+    height: clamp(3.75rem ,3.1182432432rem + 2.2972972973vw ,5.875rem)
+  }
+  .attention__icon {
     margin-bottom: clamp(.9375rem ,.4358108108rem + 1.8243243243vw ,2.625rem)
   }
   .attention__icon img {
-    width: clamp(2.1875rem ,2.0202702703rem + .6081081081vw ,2.75rem)
+    width: clamp(1.875rem ,1.6148648649rem + .9459459459vw ,2.75rem)
   }
   .equipment {
     padding-bottom: clamp(5rem ,2.2128378378rem + 10.1351351351vw ,14.375rem)
