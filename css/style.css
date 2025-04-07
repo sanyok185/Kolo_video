@@ -394,7 +394,7 @@ body {
   position: relative
 }
 .service::before {
-  content: url(../img/bg-vector_1.svg);
+  content: url(../img/bg-vector_1.webp);
   position: absolute;
   top: 0;
   left: 0;
