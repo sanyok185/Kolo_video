@@ -286,7 +286,7 @@ body {
   position: relative
 }
 .advantages::before {
-  content: url(../img/bg-vector_1.svg);
+  content: url(../img/bg-vector_1.webp);
   position: absolute;
   top: 0;
   left: 0
@@ -819,11 +819,6 @@ body {
   flex: 0 0 45%;
   padding: 1.8125rem
 }
-@media (min-width:23.75em)and (min-width:120em) {
-  .attention__text--1 {
-    padding-left: 2.625rem
-  }
-}
 @media (min-width:47.99875em) {
   .header__title {
     max-width: 70%
@@ -852,6 +847,11 @@ body {
   }
   .contact__text {
     max-width: 83%
+  }
+}
+@media (min-width:20em)and (min-width:120em) {
+  .attention__text--1 {
+    padding-left: 2.625rem
   }
 }
 @media (min-width:75em) {
@@ -1075,6 +1075,14 @@ body {
     padding: 2rem 4.25rem 1.6875rem 4.25rem
   }
 }
+@media (max-width:25em) {
+  .attention__text--1 {
+    padding-bottom: .9375rem
+  }
+  .attention__text--2 {
+    margin-bottom: 2.1875rem
+  }
+}
 @media (max-width:20em) {
   .header__title {
     font-size: 1.875rem
@@ -1084,6 +1092,9 @@ body {
   }
   .service__items:not(:last-child) {
     margin-bottom: 3.4375rem
+  }
+  .attention__icon {
+    grid-column: span 2
   }
   .equipment::before {
     height: 125.5625rem
@@ -1174,6 +1185,9 @@ body {
     aspect-ratio: 390/238
   }
   .attention {
+    font-size: 1.125rem
+  }
+  .attention {
     align-items: center;
     grid-template-columns: 4.6875rem auto
   }
@@ -1257,7 +1271,8 @@ body {
 }
 @media (max-width:29.99875em) {
   .header__button {
-    width: 100%
+    width: 100%;
+    padding: 1.875rem
   }
   .bottom-footer {
     padding: 1.5625rem 0
@@ -1472,11 +1487,8 @@ body {
   }
 }
 @media (max-width:23.75em) {
-  .attention__icon {
-    grid-column: span 2
-  }
-  .attention__text--1 {
-    grid-column: span 2
+  .attention {
+    font-size: 1rem
   }
 }
 @media (min-width:27.5em)and (max-width:120em) {
@@ -1678,6 +1690,9 @@ body {
   .header__title {
     font-size: clamp(1.875rem ,-.4583333333rem + 11.6666666667vw ,2.75rem)
   }
+  .attention__text--1 {
+    padding-left: .9375rem
+  }
 }
 @media (min-width:20em)and (max-width:75em) {
   .advantages__items:not(:last-child) {
@@ -1699,14 +1714,9 @@ body {
     margin-top: clamp(3.25rem ,3.8465909091rem + -.7954545455vw ,3.6875rem)
   }
 }
-@media (min-width:23.75em)and (min-width:27.5em)and (max-width:120em) {
+@media (min-width:20em)and (min-width:27.5em)and (max-width:120em) {
   .attention__text--1 {
     padding-left: clamp(.9375rem ,.4358108108rem + 1.8243243243vw ,2.625rem)
-  }
-}
-@media (min-width:23.75em)and (max-width:27.5em) {
-  .attention__text--1 {
-    padding-left: .9375rem
   }
 }
 @media (min-width:47.99875em)and (min-width:27.5em)and (max-width:120em) {
