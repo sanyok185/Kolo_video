@@ -262,6 +262,7 @@ body {
 }
 .footer__social {
   display: flex;
+  align-items: center;
   gap: .8125rem
 }
 .footer__social a {
