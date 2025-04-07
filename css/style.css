@@ -476,12 +476,21 @@ body {
   border-radius: 1.25rem;
   background: rgba(30,30,30,.78);
   display: grid;
-  grid-template-columns: 5.875rem auto
+  align-items: center;
+  grid-template-columns: 5.875rem auto;
+  -webkit-column-gap: 2.625rem;
+  -moz-column-gap: 2.625rem;
+  column-gap: 2.625rem;
+  row-gap: .3125rem
 }
 .attention._watcher-view {
   opacity: 1;
   -webkit-transform: translate(0);
   transform: translate(0)
+}
+.attention__icon {
+  width: 5.875rem;
+  height: 5.875rem
 }
 .attention__body {
   display: grid;
@@ -819,11 +828,6 @@ body {
   flex: 0 0 45%;
   padding: 1.8125rem
 }
-@media (min-width:18.75em)and (min-width:120em) {
-  .attention__text--1 {
-    padding-left: 2.625rem
-  }
-}
 @media (min-width:47.99875em) {
   .header__title {
     max-width: 70%
@@ -837,13 +841,8 @@ body {
   .attention__icon {
     grid-row: span 3
   }
-}
-@media (min-width:47.99875em)and (min-width:120em) {
-  .attention__text--2 {
-    padding-left: 2.625rem
-  }
   .attention__message {
-    padding-left: 2.625rem
+    margin-top: .9375rem
   }
 }
 @media (min-width:61.99875em) {
@@ -979,15 +978,6 @@ body {
   .attention {
     padding: 2.1875rem
   }
-  .attention__icon {
-    width: 5.875rem
-  }
-  .attention__icon {
-    height: 5.875rem
-  }
-  .attention__icon {
-    margin-bottom: 2.625rem
-  }
   .attention__icon img {
     width: 2.75rem
   }
@@ -1073,14 +1063,6 @@ body {
 @media (max-width:120em) {
   .header__button {
     padding: 2rem 4.25rem 1.6875rem 4.25rem
-  }
-}
-@media (max-width:25em) {
-  .attention__text--1 {
-    padding-bottom: .9375rem
-  }
-  .attention__text--2 {
-    margin-bottom: 2.1875rem
   }
 }
 @media (max-width:20em) {
@@ -1182,21 +1164,26 @@ body {
     aspect-ratio: 390/238
   }
   .attention {
-    font-size: 1.125rem
-  }
-  .attention {
+    font-size: 1.125rem;
     align-items: center;
-    grid-template-columns: 4.6875rem auto
+    grid-template-columns: 4.6875rem auto;
+    row-gap: .9375rem;
+    -webkit-column-gap: .9375rem;
+    -moz-column-gap: .9375rem;
+    column-gap: .9375rem
+  }
+  .attention__icon {
+    width: 4.6875rem;
+    height: 4.6875rem
   }
   .attention__body {
     gap: 3.125rem
   }
   .attention__text--1 {
-    padding-bottom: 1.6875rem
+    justify-self: end
   }
   .attention__text--2 {
-    grid-column: span 2;
-    margin-bottom: 3.125rem
+    grid-column: span 2
   }
   .attention__message {
     grid-column: span 2
@@ -1282,8 +1269,9 @@ body {
   .attention {
     grid-template-columns: 3.75rem auto
   }
-  .attention__message {
-    margin-bottom: .8125rem
+  .attention__icon {
+    width: 3.75rem;
+    height: 3.75rem
   }
   .item-result {
     text-align: center;
@@ -1391,15 +1379,6 @@ body {
   }
   .attention {
     padding: 1rem
-  }
-  .attention__icon {
-    width: 3.75rem
-  }
-  .attention__icon {
-    height: 3.75rem
-  }
-  .attention__icon {
-    margin-bottom: .9375rem
   }
   .attention__icon img {
     width: 1.875rem
@@ -1593,15 +1572,6 @@ body {
   .attention {
     padding: clamp(1rem ,.6469594595rem + 1.2837837838vw ,2.1875rem)
   }
-  .attention__icon {
-    width: clamp(3.75rem ,3.1182432432rem + 2.2972972973vw ,5.875rem)
-  }
-  .attention__icon {
-    height: clamp(3.75rem ,3.1182432432rem + 2.2972972973vw ,5.875rem)
-  }
-  .attention__icon {
-    margin-bottom: clamp(.9375rem ,.4358108108rem + 1.8243243243vw ,2.625rem)
-  }
   .attention__icon img {
     width: clamp(1.875rem ,1.6148648649rem + .9459459459vw ,2.75rem)
   }
@@ -1717,32 +1687,6 @@ body {
   }
   .form-contact:not(:first-child) {
     margin-top: clamp(3.25rem ,3.8465909091rem + -.7954545455vw ,3.6875rem)
-  }
-}
-@media (min-width:18.75em)and (min-width:27.5em)and (max-width:120em) {
-  .attention__text--1 {
-    padding-left: clamp(.9375rem ,.4358108108rem + 1.8243243243vw ,2.625rem)
-  }
-}
-@media (min-width:18.75em)and (max-width:27.5em) {
-  .attention__text--1 {
-    padding-left: .9375rem
-  }
-}
-@media (min-width:47.99875em)and (min-width:27.5em)and (max-width:120em) {
-  .attention__text--2 {
-    padding-left: clamp(.9375rem ,.4358108108rem + 1.8243243243vw ,2.625rem)
-  }
-  .attention__message {
-    padding-left: clamp(.9375rem ,.4358108108rem + 1.8243243243vw ,2.625rem)
-  }
-}
-@media (min-width:47.99875em)and (max-width:27.5em) {
-  .attention__text--2 {
-    padding-left: .9375rem
-  }
-  .attention__message {
-    padding-left: .9375rem
   }
 }
 @media (any-hover:hover) {
