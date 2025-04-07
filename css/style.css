@@ -1167,10 +1167,7 @@ body {
     font-size: 1.125rem;
     align-items: center;
     grid-template-columns: 4.6875rem auto;
-    row-gap: .9375rem;
-    -webkit-column-gap: .9375rem;
-    -moz-column-gap: .9375rem;
-    column-gap: .9375rem
+    gap: .9375rem!important
   }
   .attention__icon {
     width: 4.6875rem;
