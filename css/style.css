@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Overpass:300,regular,500,600,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Inter+Tight:300,regular,500,600,700,800,900display=swap);
 * {
   padding: 0;
   margin: 0;
@@ -21,7 +21,7 @@ html {
 body {
   color: #fff;
   line-height: 1;
-  font-family: Overpass;
+  font-family: "Inter Tight";
   font-size: 1.25rem;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -32,7 +32,7 @@ body {
 button,
 input,
 textarea {
-  font-family: Overpass;
+  font-family: "Inter Tight";
   font-size: inherit;
   line-height: inherit;
   color: inherit;
@@ -1487,8 +1487,14 @@ body {
   }
 }
 @media (max-width:23.75em) {
+  .title {
+    font-size: 2rem
+  }
   .attention {
     font-size: 1rem
+  }
+  .contact__title {
+    font-size: 1.375rem
   }
 }
 @media (min-width:27.5em)and (max-width:120em) {
